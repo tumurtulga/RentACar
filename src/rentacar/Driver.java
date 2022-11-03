@@ -20,7 +20,7 @@ import java.io.IOException;
 
 
 // INCLUDE HERE THE FULL NAME AND STUDENT NUMBER OF BOTH TEAM MEMBERS 
-// AS A COMMENT!!!!
+// Mirae Yu - 2021332
 // Tumurtulga Batjargal - 2021284
 
 public class Driver {
