@@ -17,24 +17,37 @@ public class BookingSystem implements BookingSystemInterface {
     @Override
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
         
-        String title = in.readLine();
-        String content = "";
-        
         BookingSystem book = new BookingSystem();
         
-        while(title != null){
-            //System.out.println(title);
-            content = in.readLine();
-            //System.out.println(content);
-            
-            RentACar cars = new RentACar(cars  );
-            book.addItem(cars);
-            
-            title = in.readLine();
-        }
-
+        String Makes = in.readLine();
+        String 
         
-        return book;
+        while(Makes)
+        
+        
+    }
+
+//    @Override
+//    public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
+//        
+//        String title = in.readLine();
+//        String content = "";
+//        
+//        BookingSystem book = new BookingSystem();
+//        
+//        while(title != null){
+//            //System.out.println(title);
+//            content = in.readLine();
+//            //System.out.println(content);
+//            
+//            RentACar cars = new RentACar(cars);
+//            book.addMake(cars);
+//            
+//            title = in.readLine();
+//        }
+//
+//        
+//        return book;
     }
     
 }

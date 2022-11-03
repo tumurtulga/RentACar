@@ -6,6 +6,7 @@
 package ooc.yoursolution;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import ooc.enums.Make;
 import ooc.enums.Month;
@@ -20,6 +21,30 @@ public class RentACar implements RentACarInterface {
     
     public RentACar(){
         cars = new ArrayList<>();
+    }
+    
+    public void addCars(RentACar car) {
+        this.cars.add(car);
+    }
+    
+    public Collection<String> listCars() {
+        
+        ArrayList<String> Makes = new ArrayList<>();
+        
+        for (RentACar item : cars){
+            Makes.add(item.getMake());
+        }
+        
+        return Makes;
+    }
+
+    public RentACar getCars(String Makes) {
+        for(RentACar item : cars){
+            if(item.getMake().equalsIgnoreCase(Makes)){
+                return item;
+            }
+        }
+        return null;
     }
 
     @Override

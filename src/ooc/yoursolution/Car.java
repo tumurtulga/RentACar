@@ -28,6 +28,7 @@ public class Car implements CarInterface {
 
     @Override
     public Make getMake() {
+        return 
     }
 
     @Override
@@ -37,6 +38,7 @@ public class Car implements CarInterface {
 
     @Override
     public double getRate() {
+        return
     }
 
     @Override
@@ -46,16 +48,13 @@ public class Car implements CarInterface {
 
     @Override
     public Map<Month, boolean[]> getAvailability() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
+        
     }
 
     @Override
     public void setAvailability(Map<Month, boolean[]> availability) {
-    }
-
-    @Override
-    public int getId() {
-        this.Id = Id;
+        this.
     }
 
     @Override
@@ -68,11 +67,17 @@ public class Car implements CarInterface {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
+    @Override
+    public int getId() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
      @Override
     public String toString() {
         return "Port_hire{" + "ID=" + Id + ", Make=" + Make + Rate + ", per day=" + ", there are=" + Availability + ", of them=" + '}' + "\n";
     }
 
-     
+    
+ 
     
 }
