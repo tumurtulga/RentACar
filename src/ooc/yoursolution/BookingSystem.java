@@ -20,12 +20,13 @@ public class BookingSystem implements BookingSystemInterface {
         String cars = in.readLine();
         
         RentACarInterface rentACar = new RentACar();
-        while(cars != null) {
-            cars = in.readLine();
+        while(cars != null) { //When cars is not equal to 0, so it is equal to something else or 1, it runs 
+            System.out.println(cars); //print a text of the text file.
+            cars = in.readLine(); //reads line by line until it finishes
                        
         }
         
-        return rentACar;
+        return rentACar; //return as a rentACar class
         
     }
             

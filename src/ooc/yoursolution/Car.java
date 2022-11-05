@@ -16,20 +16,15 @@ import ooc.enums.Month;
  */
 public class Car implements CarInterface {
 
-     ArrayList<Make> makes;
-    private Make make;
-    
-    public Car(){
-        makes = new ArrayList<>();
-    }
-    
-    
+    ArrayList<Make> makes;
     private double rate;
     private int availability;
     private int Id;
     Map<Month, boolean[]> createAvailability;
-
- 
+    
+    public Car(){
+        makes = new ArrayList<>();
+    }
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
@@ -39,10 +34,16 @@ public class Car implements CarInterface {
 
     @Override
     public Make getMake() {
+        
+        ArrayList<String> titles = new ArrayList<>();
+        
+        for (Make mk : makes) {
+            titles.addAll(titles);
+            return mk;
+        }
         return null;
         
     }
-
 
     @Override
     public void setMake(Make cars) {
@@ -66,7 +67,7 @@ public class Car implements CarInterface {
 
     @Override
     public void setAvailability(Map<Month, boolean[]> availability) {
-
+        
     }
 
     @Override
@@ -76,7 +77,7 @@ public class Car implements CarInterface {
 
     @Override
     public boolean isAvailable(Month month, int day) {
-        return true;
+        return false;
     }
 
     @Override

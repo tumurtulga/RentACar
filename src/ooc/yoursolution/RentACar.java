@@ -30,6 +30,7 @@ public class RentACar implements RentACarInterface {
 
     @Override
     public void setCars(List<CarInterface> cars) {
+        
         this.cars = cars;
     }
 
@@ -51,7 +52,7 @@ public class RentACar implements RentACarInterface {
     @Override
     public boolean checkAvailability(Month month, int day, Make make, int lengthOfRent) {
         
-        return true;
+        return false;
     }
 
     @Override
