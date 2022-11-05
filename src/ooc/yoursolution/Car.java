@@ -5,6 +5,7 @@
  */
 package ooc.yoursolution;
 
+import java.util.ArrayList;
 import java.util.Map;
 import ooc.enums.Make;
 import ooc.enums.Month;
@@ -14,70 +15,73 @@ import ooc.enums.Month;
  * @author deece
  */
 public class Car implements CarInterface {
+
+     ArrayList<Make> makes;
+    private Make make;
     
-    private String Make;
-    private int Rate;
-    private int Availability;
+    public Car(){
+        makes = new ArrayList<>();
+    }
+    
+    
+    private double rate;
+    private int availability;
     private int Id;
-   
+    Map<Month, boolean[]> createAvailability;
+
+ 
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        return createAvailability();
     }
 
     @Override
     public Make getMake() {
-        return 
+        return null;
+        
     }
 
+
     @Override
-    public void setMake(Make make) {
-        this.Make = Make;
+    public void setMake(Make cars) {
+        this.makes.add(cars);
     }
 
     @Override
     public double getRate() {
-        return
+        return rate;
     }
 
     @Override
     public void setRate(double rate) {
-        this.Rate = Rate;
+        this.rate = rate;
     }
 
     @Override
     public Map<Month, boolean[]> getAvailability() {
         return null;
-        
     }
 
     @Override
     public void setAvailability(Map<Month, boolean[]> availability) {
-        this.
+
+    }
+
+    @Override
+    public int getId() {
+        return Id;
     }
 
     @Override
     public boolean isAvailable(Month month, int day) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return true;
     }
 
     @Override
     public boolean book(Month month, int day) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return false;
     }
-    
-    @Override
-    public int getId() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-     @Override
-    public String toString() {
-        return "Port_hire{" + "ID=" + Id + ", Make=" + Make + Rate + ", per day=" + ", there are=" + Availability + ", of them=" + '}' + "\n";
-    }
-
-    
- 
-    
+       
 }
