@@ -22,6 +22,26 @@ public class RentACar implements RentACarInterface {
     private String name;
     private int NumberOfCars;
     private int Id;
+
+    
+    
+    public Make getMake() {
+        return make;
+    }
+
+    public void setMake(Make make) {
+        this.make = make;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int Id) {
+        this.Id = Id;
+    }
+    
+    
     
     /*
     methods implement RentACarInterface
