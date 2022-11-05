@@ -23,6 +23,10 @@ public class RentACar implements RentACarInterface {
     private int NumberOfCars;
     private int Id;
     
+    /*
+    methods implement RentACarInterface
+    */
+    
     @Override
     public List<CarInterface> getCars() {
         return cars;
@@ -33,12 +37,15 @@ public class RentACar implements RentACarInterface {
         
         this.cars = cars;
     }
-
+    /*
+    supposodly get the names list from Make enum
+    */
     @Override
     public String getName() {
-        for(Make make : Make.values()){
-            
-            
+        ArrayList<String> item = new ArrayList<>();
+        for(Make mk : Make.values()){
+            System.out.println(mk);
+                        
         }
         
         return name;
